@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.acerpc.to_do_list.IntentAdd"
+    android:background="@drawable/abc"
+
+    >
+
+    <RelativeLayout
+        android:id="@+id/add_list"
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        tools:layout_editor_absoluteY="8dp">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/add_List"
+            android:layout_alignStart="@+id/add_List"
+            android:text="Task:"
+            android:textColor="#ffffff"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/work"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textColor="@color/colorAccent1"
+            android:textStyle="bold"
+            android:layout_below="@+id/textView2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="11dp" />
+
+        <Button
+            android:id="@+id/add_List"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_edge"
+            android:textColor="#ffffff"
+            android:text="Add To  My List"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="14dp" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Remainder Date:"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:layout_below="@+id/work"
+            android:layout_alignLeft="@+id/textView2"
+            android:layout_alignStart="@+id/textView2" />
+
+        <EditText
+            android:id="@+id/rd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="date"
+            android:textColor="@color/colorAccent1"
+            android:textSize="20dp"
+            android:layout_below="@+id/notify"
+            android:layout_alignLeft="@+id/work"
+            android:layout_alignStart="@+id/work"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="23dp" />
+
+        <Button
+            android:id="@+id/notify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/delete_rounded"
+            android:text="Set Date"
+            android:textColor="#ffffff"
+            android:layout_below="@+id/textView4"
+            android:layout_alignRight="@+id/textView4"
+            android:layout_alignEnd="@+id/textView4"
+            android:layout_marginTop="26dp" />
+
+        <Button
+            android:id="@+id/time"
+            android:background="@drawable/delete_rounded"
+            android:text="Set Time"
+            android:textColor="#ffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/rd"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="69dp"
+            />
+
+        <EditText
+            android:id="@+id/ed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="time"
+            android:textColor="@color/colorAccent1"
+            android:textSize="20dp"
+            android:layout_alignLeft="@+id/rd"
+            android:layout_alignStart="@+id/rd"
+            android:layout_below="@+id/time"
+            android:layout_marginTop="25dp"
+            /><![CDATA[
+
+        />
+
+
+    ]]>
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
